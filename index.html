@@ -1,1 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daojun Bi | Academic Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --border-color: #e1e4e8;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Microsoft YaHei";
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            gap: 40px;
+        }
+
+        /* 左侧侧边栏 */
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 40px;
+            height: fit-content;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 3px solid var(--border-color);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .sidebar .title {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .contact-info {
+            text-align: left;
+            font-size: 14px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+
+        .contact-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .contact-item i {
+            width: 20px;
+            color: var(--accent-color);
+        }
+
+        /* 右侧内容区 */
+        .main-content {
+            flex-grow: 1;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bio {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        .bio-cn {
+            color: #666;
+            font-size: 15px;
+            margin-top: 15px;
+            border-left: 4px solid #ddd;
+            padding-left: 15px;
+            font-style: italic;
+        }
+
+        /* 列表样式 */
+        .list-item {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        .pub-title {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .pub-detail {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .cn-detail {
+            font-size: 13px;
+            color: #888;
+            display: block;
+            margin-top: 4px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--light-bg);
+            border: 1px solid var(--border-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 5px;
+            color: #666;
+        }
+
+        .doi-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .doi-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 850px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .sidebar {
+                width: 100%;
+                position: relative;
+                top: 0;
+                text-align: center;
+            }
+            .contact-info {
+                text-align: center;
+            }
+            .contact-item {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <!-- 这里的 profile.jpg 请确保你上传了同名照片，如果没有，会显示默认占位图 -->
+            <img src="profile.jpg" alt="Daojun Bi" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Daojun+Bi&background=3498db&color=fff&size=200'">
+            <h1>Daojun Bi</h1>
+            <p class="title">Ph.D. in Economics<br>Faculty Member at XYNU</p>
+            
+            <div class="contact-info">
+                <a href="mailto:bidaojun@xynu.edu.cn" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i> bidaojun@xynu.edu.cn
+                </a>
+                <a href="https://orcid.org/0009-0005-0328-0903" target="_blank" class="contact-item">
+                    <i class="fa-solid fa-id-card"></i> ORCID: 0009-0005-0328-0903
+                </a>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i> Xinyang, Henan, China
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Bio Section -->
+            <section>
+                <h2><i class="fa-solid fa-user"></i> About Me</h2>
+                <div class="bio">
+                    <p>Daojun Bi (1994–) holds a Ph.D. in Economics and is a faculty member at Xinyang Normal University. Her research interests lie in Environmental and Development Economics, Labor Resource Allocation, and Economic Statistics. Her research has been published in prestigious journals, including <i>Urban Problems</i>, <i>Economic Latitude</i>, <i>Exploring Economic Issues</i>, and the <i>Polish Journal of Environmental Studies, Politics, Economy, and Industry</i>. Dr. Bi has served as the Principal Investigator (PI) for two provincial-level research projects and multiple departmental-level projects, and has contributed to several national-level projects funded by the National Social Science Fund and the Ministry of Education.</p>
+                    <div class="bio-cn">
+                        【毕道俊（1994—），经济学博士，信阳师范大学青年教师。研究兴趣为环境与发展经济学、劳动力资源配置、经济统计。研究成果发表于《城市问题》《经济经纬》《经济问题探索》《Polish Journal of Environmental Studies, Politics, Economy, and Industry》等期刊。主持省级课题两项，主持完成厅局级课题多项。参与国家级社科和教育部课题多项】。
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section>
+                <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                <div class="list-item">
+                    <span class="pub-title">Ph.D. in Political Economy</span><br>
+                    <span class="pub-detail">Huazhong University of Science and Technology, 2019.09 - 2022.09</span>
+                </div>
+                <div class="list-item">
+                    <span class="pub-title">M.A. in Western Economics</span><br>
+                    <span class="pub-detail">Zhongnan University of Economics and Law, 2016.09 - 2019.06</span>
+                </div>
+                <div class="list-item">
+                    <span class="pub-title">B.A. in Finance</span><br>
+                    <span class="pub-detail">Nanjing University of Finance and Economics, 2012.09 - 2016.06</span>
+                </div>
+            </section>
+
+            <!-- Publications Section -->
+            <section>
+                <h2><i class="fa-solid fa-book-open"></i> Publications</h2>
+                
+                <h3>Theme 1: 环境经济与就业</h3>
+                <div class="list-item">
+                    <span class="pub-title">The Impact of Environmental Regulation on Employment Structure: Evidence from China</span><br>
+                    <span class="pub-detail">Bi, D. *, Yang, Q. & Fu, W. (2025). <i>Polish Journal of Environmental Studies: Politics, Economics and Industry</i>, 1(1), 33–45.</span><br>
+                    <a href="https://doi.org/10.15244/peai/208009" class="doi-link">DOI: 10.15244/peai/208009</a>
+                </div>
+                <div class="list-item">
+                    <span class="pub-title">The Impact of Environmental Regulation on Urban Employment in China</span><br>
+                    <span class="pub-detail">Song, Deyong, and Daojun Bi*. <i>Urban Problems</i>, no. 10, 2020, pp. 29–38.</span><br>
+                    <span class="cn-detail">【宋德勇,毕道俊*.环境规制对我国城市就业的影响[J].城市问题,2020,(10):29-38.（CSSCI，人大复印资料全文转载）】</span>
+                    <a href="https://doi.org/10.13239/j.bjsshkxy.cswt.201004" class="doi-link">DOI: 10.13239/j.bjsshkxy.cswt.201004</a>
+                </div>
+                <div class="list-item">
+                    <span class="pub-title">The Effect of National High-Tech Zones Construction on Local Urban Employment: An Investigation from the Perspectives of Employment Scale and Structure</span><br>
+                    <span class="pub-detail">Song, Deyong, and Daojun Bi*. <i>Urban Problems</i>, no. 7, 2021, pp. 41–51.</span><br>
+                    <span class="cn-detail">【宋德勇,毕道俊*.国家高新区建设对属地城市劳动力就业的作用[J].城市问题,2021,(7):41-51.（CSSCI，人大复印资料全文转载）】</span>
+                    <a href="https://doi.org/10.13239/j.bjsshkxy.cswt.210705" class="doi-link">DOI: 10.13239/j.bjsshkxy.cswt.210705</a>
+                </div>
+                <div class="list-item">
+                    <span class="pub-title">Can Technological Innovation Achieve a ‘Double Dividend’ for Environmental Protection and Employment? An Empirical Test Based on Panel Data of 285 Prefectural-level Cities</span><br>
+                    <span class="pub-detail">Deyong Song & Daojun Bi* (2021). <i>Exploration of Economic Issues</i>, (9), 55-66.</span><br>
+                    <span class="cn-detail">【宋德勇, 毕道俊*.技术创新能否实现环保与就业的“双重红利”[J].经济问题探索,2021,(9):55-66.（CSSCI，人大复印资料全文转载）】</span>
+                </div>
+                <div class="list-item">
+                    <span class="pub-title">The Impact of Technological Innovation on Industrial Structure Upgrading under Environmental Regulation: An Empirical Analysis Based on Panel Data of Central Cities Along the Yangtze River</span><br>
+                    <span class="pub-detail">Deyong Song & Daojun Bi* (2022). <i>Economic Latitude</i>, 39(1), 79-87.</span><br>
+                    <span class="cn-detail">【宋德勇,毕道俊.环境规制下技术创新对产业结构升级的影响[J].经济经纬,2022,39(1):79-87.（CSSCI，人大复印资料全文转载）】</span>
+                    <a href="https://doi.org/10.15931/j.cnki.1006-1096.2022.01.007" class="doi-link">DOI: 10.15931/j.cnki.1006-1096.2022.01.007</a>
+                </div>
+
+                <h3>Theme 2: 国际经济</h3>
+                <div class="list-item">
+                    <span class="pub-title">Does China’s OFDI in ‘Belt and Road’ Countries Exhibit Political Risk Preference? An Empirical Test Based on an Extended Investment Gravity Model</span><br>
+                    <span class="pub-detail">Liangwen Luo & Daojun Bi* (2018). <i>Finance and Accounting Monthly</i>, (10), 3-10.</span><br>
+                    <span class="cn-detail">【罗良文, 毕道俊*.我国在“一带一路”沿线国家的OFDI是否存在政治风险偏好[J].财会月刊,2018,(10):3-10.（北大中文核心）】</span>
+                    <a href="https://doi.org/10.19641/j.cnki.42-1290/f.2018.10.001" class="doi-link">DOI: 10.19641/j.cnki.42-1290/f.2018.10.001</a>
+                </div>
+            </section>
+
+            <!-- Fundings Section -->
+            <section>
+                <h2><i class="fa-solid fa-flask"></i> Fundings</h2>
+                <div class="list-item">
+                    <span class="tag">National</span> <b>National Social Science Fund of China (Major Project)</b>: Research on the Integration of Environmental Protection and High-Quality Economic Development (No. 18ZDA050), 2018–2024, Participated.
+                </div>
+                <div class="list-item">
+                    <span class="tag">National</span> <b>National Natural Science Foundation of China (71803181)</b>: The theoretical mechanisms and policy instruments of the carbon market system affecting economic fluctuations and expected inflation, 2019/01-2021/12, Participated.
+                </div>
+                <div class="list-item">
+                    <span class="tag">Provincial</span> <b>Henan Provincial Social Science Planning Project</b>: Research on Green and Low-Carbon Transition to Promote New Quality Productive Forces, 2024.12, PI.
+                </div>
+                <div class="list-item">
+                    <span class="tag">Provincial</span> <b>Henan Province Soft Science Research Project</b>: AI-Driven Synergistic Governance of Carbon Reduction and Pollution Mitigation, 2026.1, PI.
+                </div>
+                <div class="list-item">
+                    <span class="tag">Departmental</span> <b>Henan Federation of Social Sciences Project</b>: Linkage Mechanism of New Generation Migrant Workers’ Entrepreneurship and Rural Revitalization (No. SKL-2024-2147), 2024–2025, PI.
+                </div>
+                <div class="list-item">
+                    <span class="tag">Municipal</span> <b>Xinyang Municipal Social Science Project</b>: Green Employment for New Quality Productive Forces, 2024–2025, PI.
+                </div>
+                <div class="list-item">
+                    <span class="tag">University</span> <b>Dabie Mountain Research Center Project</b>: AI-driven Improvement of Social Security System in Xinyang, 2025, PI.
+                </div>
+            </section>
+
+            <!-- Activities Section -->
+            <section>
+                <h2><i class="fa-solid fa-microphone"></i> Academic Activities</h2>
+                <div class="list-item">2025.07 | The 9th China Labor Economics Scholars Forum, Changchun, Jilin (Paper Presentation)</div>
+                <div class="list-item">2021.04 | The 4th Hubei Industrial Economics Annual Conference, Wuhan, Hubei (Paper Presentation)</div>
+                <div class="list-item">2020.11 | The 14th China Development Economics Annual Conference, Shenzhen, Guangdong (Paper Presentation)</div>
+            </section>
+
+            <!-- Academic Service Section -->
+            <section>
+                <h2><i class="fa-solid fa-user-check"></i> Academic Service</h2>
+                <div class="list-item">
+                    <b>Editor:</b> Section Editor (Economics and Finance), <i>Journal of Zhongnan University of Economics and Law (Graduate Edition)</i> [2016.9 – 2017.6]
+                </div>
+                <div class="list-item">
+                    <b>Reviewer:</b> <i>Sustainable Futures</i>
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
